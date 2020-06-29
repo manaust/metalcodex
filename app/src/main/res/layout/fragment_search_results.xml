@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/header"
+        style="@style/AppTheme.Header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        tools:context=".ui.fragments.home.HomeFragment">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/results"
+            android:textColor="@color/accent"
+            android:textSize="32sp" />
+
+        <TextView
+            android:id="@+id/tv_search_term"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/accent"
+            android:textSize="32sp"
+            tools:text="Metallica" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/skeleton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header">
+
+        <include layout="@layout/fragment_skeleton_list" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/no_results"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header"
+        android:visibility="gone">
+
+        <include layout="@layout/fragment_no_songs" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list"
+        android:name="be.satanica.metalcodex.ui.fragments.song.list.SongsFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:visibility="gone"
+        app:layoutManager="LinearLayoutManager"
+        tools:context=".ui.fragments.song.list.SongsFragment"
+        tools:listitem="@layout/list_item_song" />
+</RelativeLayout>

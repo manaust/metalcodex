@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:width="@dimen/drawable_size"
+        android:height="@dimen/drawable_size"
+        android:drawable="@drawable/ic_spotify" />
+</layer-list>

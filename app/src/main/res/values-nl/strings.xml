@@ -1,0 +1,28 @@
+<resources>
+    <string name="satanica_s">Satanica\'s</string>
+    <string name="app_name">Metalcodex</string>
+
+    <string name="menu">Menu</string>
+    <string name="back">Terug</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Sluiten</string>
+    <string name="spotify">Spotify</string>
+    <string name="facebook">Facebook</string>
+    <string name="discord">Discord</string>
+    <string name="dark_mode">Dark mode</string>
+
+    <string name="results">Resultaten voor</string>
+    <string name="search_codex">Doorzoek de codex…</string>
+    <string name="search_term">\"%1$s\"</string>
+
+    <string name="listen_on_spotify">Luisteren op Spotify</string>
+    <string name="bookmark">Bladwijzer</string>
+
+    <string name="album_cover">Albumhoes</string>
+    <string name="all_songs">Alle nummers</string>
+    <string name="bookmarks">Bladwijzers</string>
+    <string name="album">Album</string>
+
+    <string name="key_theme">app_theme_key</string>
+    <string name="no_songs_found">Geen nummers gevonden</string>
+</resources>

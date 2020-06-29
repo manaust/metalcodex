@@ -1,0 +1,71 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+    </style>
+
+    <style name="AppTheme.Splash" parent="Theme.MaterialComponents.DayNight">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/background_splash</item>
+        <item name="colorAccent">@color/accent</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.ActionBar">
+        <item name="elevation">0dp</item>
+        <item name="contentInsetStartWithNavigation">32dp</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.DayNight">
+        <item name="tint">@color/white</item>
+    </style>
+
+    <style name="AppTheme.TabLayout">
+        <item name="tabIndicatorFullWidth">false</item>
+        <item name="android:layout_marginStart">5dp</item>
+        <item name="tabMaxWidth">500dp</item>
+        <item name="tabMode">scrollable</item>
+        <item name="tabGravity">fill</item>
+        <item name="tabPaddingStart">8dp</item>
+        <item name="tabPaddingEnd">8dp</item>
+        <item name="tabTextAppearance">@style/AppTheme.TabText</item>
+    </style>
+
+    <style name="AppTheme.TabText" parent="@android:style/TextAppearance">
+        <item name="android:textSize">14sp</item>
+        <item name="fontFamily">sans-serif-black</item>
+    </style>
+
+    <style name="AppTheme.Header">
+        <item name="android:paddingTop">64dp</item>
+        <item name="android:paddingHorizontal">32dp</item>
+    </style>
+
+    <style name="AppTheme.MenuItem">
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:clickable">true</item>
+        <item name="tint">@color/menu_icon</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+    <style name="AppTheme.MenuItem.Logo" parent="AppTheme.MenuItem">
+        <item name="tint">@color/highlight</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:clickable">false</item>
+    </style>
+
+    <style name="AppTheme.Song">
+        <item name="fontFamily">sans-serif-black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+    </style>
+
+    <style name="AppTheme.Artist">
+        <item name="fontFamily">sans-serif</item>
+        <item name="color">@color/text_light</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+</resources>

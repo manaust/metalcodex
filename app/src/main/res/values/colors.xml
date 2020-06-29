@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#E50914</color>
+    <color name="primary_dark">@color/primary</color>
+    <color name="accent">@color/primary</color>
+
+    <color name="highlight">#E50914</color>
+
+    <color name="white">#FFF</color>
+
+    <color name="background">#FAFAFC</color>
+    <color name="background_splash">#101114</color>
+    <color name="background_card">@color/white</color>
+    <color name="background_light">@color/white</color>
+
+    <color name="grey_light">#e1e1e1</color>
+    <color name="text_light">#666</color>
+    <color name="tab_light">#E06868</color>
+
+    <color name="menu_icon">@color/text_light</color>
+</resources>

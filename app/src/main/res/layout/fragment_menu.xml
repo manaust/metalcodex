@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".ui.fragments.menu.MenuFragment">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/title"
+            style="@style/AppTheme.MenuItem.Logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_logo" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_light" />
+
+        <ImageView
+            android:id="@+id/spotify"
+            style="@style/AppTheme.MenuItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/spotify"
+            android:src="@drawable/ic_spotify" />
+
+        <ImageView
+            android:id="@+id/facebook"
+            style="@style/AppTheme.MenuItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/facebook"
+            android:src="@drawable/ic_facebook" />
+
+        <ImageView
+            android:id="@+id/discord"
+            style="@style/AppTheme.MenuItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/discord"
+            android:src="@drawable/ic_discord" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_light" />
+
+        <ImageView
+            android:id="@+id/darkmode"
+            style="@style/AppTheme.MenuItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/dark_mode"
+            android:src="@drawable/ic_dark_mode" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/grey_light" />
+
+</LinearLayout>

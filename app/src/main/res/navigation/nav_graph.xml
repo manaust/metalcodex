@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_home">
+
+    <action
+        android:id="@+id/song_detail"
+        app:destination="@id/songFragment" />
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="be.satanica.metalcodex.ui.fragments.home.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_search"
+            app:destination="@id/searchResultsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/songFragment"
+        android:name="be.satanica.metalcodex.ui.fragments.song.detail.SongDetailFragment"
+        android:label="SongFragment"
+        tools:layout="@layout/fragment_song_detail">
+        <argument
+            android:name="id"
+            app:argType="string" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="artist"
+            app:argType="string" />
+        <argument
+            android:name="album"
+            app:argType="string" />
+        <argument
+            android:name="thumbnail"
+            app:argType="string" />
+        <argument
+            android:name="release_date"
+            app:argType="string" />
+        <argument
+            android:name="bookmarked"
+            app:argType="boolean" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/searchResultsFragment"
+        android:name="be.satanica.metalcodex.ui.fragments.song.search.SearchResultsFragment"
+        android:label="SearchResultsFragment"
+        tools:layout="@layout/fragment_search_results">
+        <argument
+            android:name="term"
+            app:argType="string" />
+    </fragment>
+
+</navigation>

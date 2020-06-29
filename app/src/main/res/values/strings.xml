@@ -1,0 +1,28 @@
+<resources>
+    <string name="satanica_s">Satanica\'s</string>
+    <string name="app_name">Metalcodex</string>
+
+    <string name="menu">Menu</string>
+    <string name="back">Back</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="spotify">Spotify</string>
+    <string name="facebook">Facebook</string>
+    <string name="discord">Discord</string>
+    <string name="dark_mode">Dark mode</string>
+
+    <string name="results">Results for</string>
+    <string name="search_codex">Search the codex…</string>
+    <string name="search_term">\"%1$s\"</string>
+
+    <string name="listen_on_spotify">Listen on Spotify</string>
+    <string name="bookmark">Bookmark</string>
+
+    <string name="album_cover">Album cover</string>
+    <string name="all_songs">All songs</string>
+    <string name="bookmarks">Bookmarks</string>
+    <string name="album">Album</string>
+
+    <string name="key_theme">app_theme_key</string>
+    <string name="no_songs_found">No songs found</string>
+</resources>
