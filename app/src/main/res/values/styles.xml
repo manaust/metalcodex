@@ -40,7 +40,8 @@
 
     <style name="AppTheme.Header">
         <item name="android:paddingTop">64dp</item>
-        <item name="android:paddingHorizontal">32dp</item>
+        <item name="android:paddingStart">32dp</item>
+        <item name="android:paddingEnd">32dp</item>
     </style>
 
     <style name="AppTheme.MenuItem">
