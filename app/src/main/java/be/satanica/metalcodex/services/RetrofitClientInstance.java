@@ -8,7 +8,7 @@ import retrofit2.converter.scalars.ScalarsConverterFactory;
 public class RetrofitClientInstance {
 
     private static Retrofit retrofit;
-    private static final String BASE_URL = "https://manaust.github.io/static/api/";
+    private static final String BASE_URL = "https://satanica.be/api/";
 
     public static Retrofit getRetrofitInstance() {
         if (retrofit == null) {
