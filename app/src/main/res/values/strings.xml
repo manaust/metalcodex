@@ -10,6 +10,7 @@
     <string name="facebook">Facebook</string>
     <string name="discord">Discord</string>
     <string name="dark_mode">Dark mode</string>
+    <string name="version" translatable="false">v%s</string>
 
     <string name="results">Results for</string>
     <string name="search_codex">Search the codex…</string>

@@ -4,8 +4,10 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.preference.PreferenceManager.getDefaultSharedPreferences
+import be.satanica.metalcodex.BuildConfig
 import be.satanica.metalcodex.R
 import be.satanica.metalcodex.common.helpers.IntentHelper
 import be.satanica.metalcodex.databinding.FragmentMenuBinding
@@ -26,6 +28,14 @@ class MenuFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        binding.title.setOnClickListener {
+            Toast.makeText(
+                requireContext(),
+                getString(R.string.version, BuildConfig.VERSION_NAME),
+                Toast.LENGTH_SHORT
+            ).show()
+        }
 
         binding.spotify.setOnClickListener {
             startActivity(
